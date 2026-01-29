@@ -3,7 +3,14 @@
     padding: 0;
 }
 
-.nav {
+.navbar {
     display: flex;
-    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
 }
