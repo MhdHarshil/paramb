@@ -69,6 +69,11 @@ nav a:hover {
   border-radius: 40px;
 }
 
+.hero a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .hero button:hover {
   background: #005fd1;
 }
@@ -405,6 +410,103 @@ footer {
 @media (max-width: 900px) {
   .about-grid,
   .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+
+
+
+/* Contact */
+.contact {
+  padding: 70px 0;
+  background: #f5f7fa;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+/* Contact Info */
+.contact-info h2 {
+  margin-bottom: 14px;
+}
+
+.contact-info p {
+  color: #555;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.info-item {
+  margin-bottom: 16px;
+}
+
+/* Contact Form */
+.contact-form {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(0,0,0,0.06);
+}
+
+.contact-form h2 {
+  margin-bottom: 18px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: #0077ff;
+  color: #fff;
+  font-size: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #005fd1;
+}
+
+.form-status {
+  margin-top: 12px;
+  font-size: 14px;
+  color: green;
+}
+
+/* Map */
+.map {
+  padding: 60px 0;
+  background: #ffffff;
+}
+
+.map-box {
+  height: 300px;
+  background: #eaeaea;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #777;
+  border-radius: 8px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-grid {
     grid-template-columns: 1fr;
   }
 }
